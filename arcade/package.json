@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "lint:ci": "npm run lint && npm run lint:styles",
     "lint:styles": "stylelint ./src/**/*.scss",
-    "prepush": "npm run lint:ci"
+    "prepush": "npm run lint:ci",
+    "prepare": "cd .. && husky install arcade/.husky"
   },
   "private": true,
   "dependencies": {
