@@ -32,7 +32,7 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/app/core/styles/styles.scss"
+              "./src/app/core/styles/styles.scss"
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.js"

@@ -1,11 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'variables';
-// @import '/node_modules/bootstrap/scss/variables';
-
-// TODO: implementar: components
-// @import 'cards';
-// @import 'tabs';
-// @import 'modals';
-
 // bootstrap
-@import '/node_modules/bootstrap/scss/bootstrap.scss';
+@import "variables";
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+@import "/node_modules/bootstrap/scss/variables";
+@import "/node_modules/bootstrap/scss/functions";
+
+html,
+body {
+  background-color: $dark;
+}
+
+// .bg-primary {
+//   background-color: #8d0d87 !important;
+// }

@@ -7,7 +7,7 @@
         "**/*.css"
       ],
       "options": {
-        "singleQuote": true
+        "singleQuote": false
       }
     }
   ]

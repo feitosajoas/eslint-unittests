@@ -1,15 +1,25 @@
+// :root {
+//   --bs-primary: #892525;
+//   --bs-secondary: #a73a3a;
+//   --bs-active-link: #892525;
+//   --bs-header-height: 85px;
+//   --ds-color-who-we-are: var(--bs-primary);
+//   --ds-btn-color: var(--bs-primary);
+//   --ds-btn-color-hover: white;
+// }
+$primary: #084488 !default;
 $grey: #e9e9e9;
 $danger: #ff0000;
 $white-color: #fff;
-$black-color: pink !default;
+$black-color: #2c2c2c !default;
 $default-color: #888888 !default;
 
 $theme-colors: (
-  // 'primary': $primary,
-  'grey': $grey,
-  'danger': $danger,
-  'white': $white-color,
-  'black': $black-color
+  "primary": $primary,
+  "grey": $grey,
+  "danger": $danger,
+  "white": $white-color,
+  "black": $black-color,
 );
 
 $success-color: #18ce0f !default;
@@ -50,9 +60,9 @@ $input-focus-bg: none;
 // $input-focus-width:                     $input-btn-focus-width;
 $input-focus-box-shadow: none;
 
-$font-family-sans-serif: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial,
-  'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji',
-  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$font-family-sans-serif: -apple-system, "Segoe UI", "Helvetica Neue", Arial,
+  "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 $link-color: #000;
 
