@@ -1,0 +1,64 @@
+$grey: #e9e9e9;
+$danger: #ff0000;
+$white-color: #fff;
+$black-color: pink !default;
+$default-color: #888888 !default;
+
+$theme-colors: (
+  // 'primary': $primary,
+  'grey': $grey,
+  'danger': $danger,
+  'white': $white-color,
+  'black': $black-color
+);
+
+$success-color: #18ce0f !default;
+$success-states-color: lighten($success-color, 6%) !default;
+$success-color-opacity: rgba(24, 206, 15, 0.3) !default;
+$success-color-alert: rgba(24, 206, 15, 0.8) !default;
+
+$border: 1px solid !default;
+$border-radius-extra-small: 0.125rem !default;
+$border-radius-small: 0.1875rem !default;
+$border-radius-large: 0.25rem !default;
+$border-radius-extreme: 0.875rem !default;
+
+$transparent-bg: transparent !default;
+
+$padding-input-vertical: 11px !default;
+$padding-input-horizontal: 19px !default;
+
+$padding-btn-vertical: 11px !default;
+$padding-btn-horizontal: 22px !default;
+
+$padding-base-vertical: 0.5rem !default;
+$padding-base-horizontal: 0.7rem !default;
+
+$padding-round-horizontal: 23px !default;
+
+$padding-simple-vertical: 10px !default;
+$padding-simple-horizontal: 17px !default;
+
+$padding-large-vertical: 15px !default;
+$padding-large-horizontal: 48px !default;
+
+$padding-small-vertical: 5px !default;
+$padding-small-horizontal: 15px !default;
+
+$input-focus-border-color: white;
+$input-focus-bg: none;
+// $input-focus-width:                     $input-btn-focus-width;
+$input-focus-box-shadow: none;
+
+$font-family-sans-serif: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial,
+  'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+$link-color: #000;
+
+$input-focus-box-shadow: none !important;
+$input-box-shadow: none !important;
+$form-select-box-shadow: none !important;
+$form-select-focus-box-shadow: none !important;
+$input-btn-focus-box-shadow: none !important;
+$form-check-input-focus-box-shadow: none !important;
