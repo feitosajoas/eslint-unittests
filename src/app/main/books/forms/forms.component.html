@@ -1,0 +1,51 @@
+<div class="container mt-5 mb-5">
+  <h1 class="text-center mt-4 mb-5 fw-bold">Create a new book</h1>
+
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <form action="" novalidate class="mt-5" autocomplete="off">
+        <div class="row">
+          <div class="col-md-6">
+            <app-input inputType="text" inputId="bookName" labelName="Book name" placeholder="Harry Potter and the Philosopher's Stone">
+            </app-input>
+          </div>
+          <div class="col-md-6">
+            <app-input inputType="text" inputId="authorName" labelName="Author name" placeholder="J.K. Rowling">
+            </app-input>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <app-input inputType="number" inputId="price" labelName="Price" placeholder="$ 10,00">
+                </app-input>
+              </div>
+              <div class="col-md-6">
+                <app-input inputType="text" inputId="publishdate" labelName="Publishdate" placeholder="02/15/1998">
+                </app-input>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <app-input inputType="text" inputId="publishingCompany" labelName="Publishing company" placeholder="Bloomsbury Childrens Books">
+            </app-input>
+          </div>
+        </div>
+        <div>
+          <app-input [isInput]="false" inputId="description" labelName="Description" placeholder="1st edition (1 September 2014)">
+          </app-input>
+        </div>
+
+        <div class="text-end">
+          <button class="btn mx-2 btn-danger">Reset</button>
+          <button class="btn btn-primary">Add new book</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6 text-end">
+      <img src="/assets/images/books-emoji.png" class="img-fluid img-book" alt="">
+    </div>
+  </div>
+
+</div>
