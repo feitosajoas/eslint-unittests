@@ -1,13 +1,13 @@
 <div *ngIf="isInput">
   <div class="form-floating mb-4">
-    <input [type]="inputType" class="form-control" [id]="inputId" [placeholder]="placeholder">
+    <input [type]="inputType" class="form-control" [id]="inputId" [placeholder]="placeholder" [(ngModel)]="value">
     <label [for]="inputId">{{ labelName }}</label>
   </div>
 </div>
 
 <div *ngIf="!isInput">
   <div class="form-floating mb-4">
-    <textarea class="form-control" [id]="inputId" [placeholder]="placeholder"></textarea>
+    <textarea class="form-control" [id]="inputId" [placeholder]="placeholder" [(ngModel)]="value"></textarea>
     <label [for]="inputId">{{ labelName }}</label>
   </div>
 </div>
