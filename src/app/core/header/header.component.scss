@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
 .logo {
   width: 50px;
@@ -6,6 +6,10 @@
 }
 
 .logo-name {
-  font-family: "Passion One", cursive;
+  font-family: 'Passion One', cursive;
   font-size: 2.9rem;
+}
+
+.active {
+  color: #02d9ff !important;
 }
