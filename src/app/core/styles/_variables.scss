@@ -7,12 +7,12 @@ $black-color: #2c2c2c !default;
 $default-color: #888888 !default;
 
 $theme-colors: (
-  "primary": $primary,
-  "success": $success,
-  "grey": $grey,
-  "danger": $danger,
-  "white": $white-color,
-  "black": $black-color,
+  'primary': $primary,
+  'success': $success,
+  'grey': $grey,
+  'danger': $danger,
+  'white': $white-color,
+  'black': $black-color
 );
 
 $success-color: #18ce0f !default;
@@ -48,14 +48,14 @@ $padding-large-horizontal: 48px !default;
 $padding-small-vertical: 5px !default;
 $padding-small-horizontal: 15px !default;
 
-$input-focus-border-color: white;
+$input-focus-border-color: $primary;
+$form-label-color: $primary;
 $input-focus-bg: none;
 // $input-focus-width:                     $input-btn-focus-width;
 $input-focus-box-shadow: none;
 
-$font-family-sans-serif: -apple-system, "Segoe UI", "Helvetica Neue", Arial,
-  "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
 $link-color: #000;
 
