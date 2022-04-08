@@ -13,13 +13,14 @@ const INPUT_FIELD_VALUE_ACCESSOR: any = {
   providers: [INPUT_FIELD_VALUE_ACCESSOR]
 })
 export class InputComponent implements ControlValueAccessor {
+  @Input() cssClass: any;
   @Input() isInput: boolean = true;
   @Input() inputType: string = '';
   @Input() inputId: string = '';
   @Input() placeholder: string = '';
   @Input() labelName: string = '';
   @Input() isReadOnly = false;
-  @Input() control: any;
+  @Input() control!: any;
 
   private innerValue: any;
 
