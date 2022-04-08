@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./forms.component.scss']
 })
 export class FormsComponent {
-  bookForm!: FormGroup;
+  bookForm: FormGroup;
 
   constructor(private fb: FormBuilder) {
     this.bookForm = this.fb.group({
@@ -18,5 +18,15 @@ export class FormsComponent {
       publishingCompany: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(80)]],
       description: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(80)]]
     });
+  }
+
+  verifyValidTouched(input: string) {
+    return !this.bookForm.get(input)?.valid && (this.bookForm.get(input)?.touched || this.bookForm.get(input)?.dirty);
+  }
+
+  validateClass(input: string) {
+    return {
+      'is-invalid': this.verifyValidTouched(input)
+    };
   }
 }

@@ -6,13 +6,13 @@
       <form [formGroup]="bookForm" novalidate class="mt-5" autocomplete="off">
         <div class="row">
           <div class="col-md-6">
-            <app-input formControlName="bookName" inputType="text" inputId="bookName" labelName="Book name"
-              placeholder="Harry Potter and the Philosopher's Stone">
+            <app-input formControlName="bookName" [cssClass]="validateClass('bookName')" inputType="text" inputId="bookName"
+              labelName="Book name" placeholder="Harry Potter and the Philosopher's Stone" [control]="bookForm.get('bookName')">
             </app-input>
           </div>
           <div class="col-md-6">
-            <app-input formControlName="authorName" inputType="text" inputId="authorName" labelName="Author name"
-              placeholder="J.K. Rowling">
+            <app-input formControlName="authorName" [cssClass]="validateClass('authorName')" inputType="text" inputId="authorName"
+              labelName="Author name" placeholder="J.K. Rowling" [control]="bookForm.get('authorName')">
             </app-input>
           </div>
         </div>
@@ -20,25 +20,27 @@
           <div class="col-md-6">
             <div class="row">
               <div class="col-md-6">
-                <app-input formControlName="price" inputType="number" inputId="price" labelName="Price" placeholder="$ 10,00">
+                <app-input formControlName="price" [cssClass]="validateClass('price')" inputType="number" inputId="price" labelName="Price"
+                  placeholder="$ 10,00" [control]="bookForm.get('price')">
                 </app-input>
               </div>
               <div class="col-md-6">
-                <app-input formControlName="publishdate" inputType="text" inputId="publishdate" labelName="Publishdate"
-                  placeholder="02/15/1998">
+                <app-input formControlName="publishdate" [cssClass]="validateClass('publishdate')" inputType="text" inputId="publishdate"
+                  labelName="Publishdate" placeholder="02/15/1998" [control]="bookForm.get('publishdate')">
                 </app-input>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <app-input formControlName="publishingCompany" inputType="text" inputId="publishingCompany" labelName="Publishing company"
-              placeholder="Bloomsbury Childrens Books">
+            <app-input formControlName="publishingCompany" [cssClass]="validateClass('publishingCompany')" inputType="text"
+              inputId="publishingCompany" labelName="Publishing company" placeholder="Bloomsbury Childrens Books"
+              [control]="bookForm.get('publishCompany')">
             </app-input>
           </div>
         </div>
         <div>
-          <app-input formControlName="description" [isInput]="false" inputId="description" labelName="Description"
-            placeholder="1st edition (1 September 2014)">
+          <app-input formControlName="description" [cssClass]="validateClass('description')" [isInput]="false" inputId="description"
+            labelName="Description" placeholder="1st edition (1 September 2014)" [control]="bookForm.get('description')">
           </app-input>
         </div>
 
@@ -46,6 +48,8 @@
           <button class="btn mx-2 btn-danger">Reset</button>
           <button class="btn btn-primary">Add new book</button>
         </div>
+
+        <app-form-debug [form]="bookForm"></app-form-debug>
       </form>
     </div>
     <div class="col-md-6 text-end">
