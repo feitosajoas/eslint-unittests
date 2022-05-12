@@ -13,3 +13,35 @@
 .active {
   color: #02d9ff !important;
 }
+
+.btn-rounded {
+  border-radius: 50px;
+}
+
+.search-form {
+  position: relative;
+  width: max-content;
+  input {
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 5px 5px rgba(#000000, 0.08);
+    &::placeholder {
+      color: #a9b0be;
+    }
+  }
+  button {
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: #02d9ff;
+    border: none;
+    border-radius: 5rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+}
