@@ -1,0 +1,80 @@
+.course-card {
+	background: linear-gradient(180deg, #fff, #f3ebe9);
+	border-radius: .9rem;
+	box-shadow: 2px 0 13px 2px hsla(0, 0%, 100%, .3);
+	position: relative;
+	display: grid;
+	grid-template-columns: 120px auto
+}
+
+.course-card .order-badge {
+	position: absolute;
+	right: 1.3rem;
+	top: 1rem
+}
+
+@media (max-width:600px) {
+	.course-card .order-badge {
+		display: none
+	}
+}
+
+@media (min-width:600px) and (max-width:992px) {
+	.course-card .order-badge {
+		display: none
+	}
+}
+
+.gradient-wrapper.bg-custom {
+  background: linear-gradient(180deg,#ffcc63,#ffa83f);
+}
+
+.gradient-wrapper {
+  box-shadow: 0 4px 9px 0 rgb(0 0 0 / 17%);
+  border-radius: 0.9rem;
+}
+
+.based-icon.bg-custom {
+  background: rgba(255,168,63,.8);
+}
+
+// .based-icon {
+//   width: 54px;
+//   height: 90px;
+//   border-radius: 100rem;
+//   z-index: 1;
+//   position: relative;
+// }
+
+.course-card .gradient-wrapper {
+	position: relative;
+	display: grid;
+	justify-content: center;
+	align-content: center
+}
+
+.course-card .gradient-wrapper .based-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.course-card .content {
+	text-align: left;
+	padding: 1.5rem;
+	color: #2d3d54
+}
+
+.course-card .content .title {
+	font-weight: 500;
+	margin-bottom: 1rem;
+	font-size: 1rem
+}
+
+.course-card .content .description {
+	color: #2d3d54;
+	font-size: .85rem;
+	line-height: 19px;
+	font-weight: 300
+}
